@@ -46,27 +46,29 @@ export default function App() {
 
     
   };
-
-// Function to process the text and format it as needed
-function processText(text) {
-  const lines = text.split('•');
-  const listItems = lines.filter((line) => line.trim() !== '');
-
-  if (listItems.length > 1) {
-    return (
-      <>
-        <p>{listItems[0]}</p>
-        <ul>
-          {listItems.slice(1).map((item, index) => (
-            <li key={index}>{item.trim()}</li>
-          ))}
-        </ul>
-      </>
-    );
-  } else {
-    return <p>{text}</p>;
+  
+  function processText(text) {
+    const lines = text.split(/\d+\.\s/).filter((line) => line.trim() !== '');
+  
+    if (lines.length > 1) {
+      return (
+        <>
+          {lines[0].trim() !== '' && <p>{lines[0].trim()}</p>}
+          <ol>
+            {lines
+              .slice(1)
+              .map((item, index) => (
+                <li key={index}>{item.trim()}</li>
+              ))}
+          </ol>
+        </>
+      );
+    } else {
+      return <p>{text}</p>;
+    }
   }
-}
+
+
 
 
   return (
