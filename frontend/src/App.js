@@ -113,7 +113,7 @@ function processText(text) {
 
              <div>
               <Typography level="h4" component="h1">
-                Do you want some Marketing Advices?
+                Do you want some Sales Advices?
               </Typography>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>

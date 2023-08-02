@@ -1,13 +1,16 @@
 ﻿# AI-Enhanced LLM in Marketing Intelligence
 
 
-## Files
-app.py (Our backend)
-requirements.txt
-Sales_guide.pdf (The Pdf we were using with Langchain)
-.env (Insert your OpenAI Key here)
-site-packages (All the libraries for the execution of the backend)
+## Important Files
 
+ - app.py (Our backend) 
+ - requirements.txt 
+ - Sales_guide.pdf (The Pdf we are using Langchain) 
+ - .env (Insert your OpenAI Key here)  
+ - site-packages (All the libraries for the execution of the backend)
+ - backend.zip
+ - build folder (inside frontend folder)
+ - 
 
 ## Backend Deployment
 
@@ -68,4 +71,16 @@ To run our frontend, run:  `npm start`
 3.  **Important Note - Update Backend IP**: Before deploying, make sure to modify the IP access inside the ".env" file in the "frontend" folder. Set the IP address to match the IP address of your backend server. This ensures that your React app can communicate with the backend correctly after deployment.
 
 
+
+## Access Metrics
+
+After launching and running the backend application, you can access metrics by visiting "http://{url_backend}/metrics." To create a dashboard with these data, we can consider using Grafana (https://grafana.com/) or a similar tool.
+
+## CI/CD Pipeline
+
+Please check the tests in the test.py file. The main.yaml file is located inside the github/workflows directory.
+
+## Tasks for Improvements
+ - Integrate vector databases into Pinecone to avoid processing the file every time the server is run.
+ - Add more tests into test.py 
 
