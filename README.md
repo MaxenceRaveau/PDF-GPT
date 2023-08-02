@@ -57,7 +57,6 @@ This project use Fast API, as long as OpenAI API and Langchain.
 
  ![Result Expected](https://image.noelshack.com/fichiers/2023/31/3/1690955883-screenshot-6.png)
 
- You can test the backend server by getting the url of it http://{backend_server_ip}/ in your browser. You should get a "OK" message.
 
 ### Deploying to AWS S3 with Lambda
 
