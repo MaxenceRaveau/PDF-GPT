@@ -25,7 +25,7 @@ load_dotenv(dotenv_path=".env")
 import os
 
 # I have let the open AI API key here so you dont have to change it for the test
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
 # location of the pdf file/files. 
 reader = PdfReader('Sales_guide.pdf')

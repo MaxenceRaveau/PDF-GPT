@@ -1,16 +1,20 @@
 ﻿# AI-Enhanced LLM in Marketing Intelligence
 
+## Functionnality
+
+This web application enables users to browse through any file and interact with ChatGPT by asking questions based on the contents of that file. In this example, I have selected the file 'SalesGuide.pdf,' which serves as a guide for salespeople. However, you have the flexibility to replace this PDF with any other file you prefer, such as a 'Database of Leads' or 'Sales Guidance,' to provide valuable assistance to sales professionals in their day-to-day work
 
 ## Important Files
 
- - app.py (Our backend) 
- - requirements.txt 
- - Sales_guide.pdf (The Pdf we are using Langchain) 
- - .env (Insert your OpenAI Key here)  
- - site-packages (All the libraries for the execution of the backend)
- - backend.zip
- - build folder (inside frontend folder)
- - 
+-   **app.py:** This file contains our backend code.
+-   **test.py:** This file contains the CI/CD tests for our project.
+-   **requirements.txt:** This file lists all the dependencies required to run the project.
+-   **Sales_guide.pdf:** This is the PDF document we are using for Langchain.
+-   **.env:** Insert your OpenAI Key here in this file.
+-   **site-packages:** This folder contains all the libraries necessary for the execution of the backend.
+-   **backend.zip:** This is a compressed archive of the backend code.
+-   **build folder:** This folder is located inside the frontend folder and is used to deploy the frontend of our project.
+ 
 
 ## Backend Deployment
 
