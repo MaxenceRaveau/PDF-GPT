@@ -23,6 +23,8 @@ load_dotenv(dotenv_path=".env")
 # Get your API keys from openai, you will need to create an account. 
 # Here is the link to get the keys: https://platform.openai.com/account/billing/overview
 import os
+
+# I have let the open AI API key here so you dont have to change it for the test
 os.environ["OPENAI_API_KEY"] = "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"
 
 # location of the pdf file/files. 
@@ -95,22 +97,9 @@ def submit_data(input_data: InputData):
     # Handle the request and send the response
     return {"query" : answer}
 
-@app.post("/query2")
-def submit_data(input_data: InputData):
-    #Write open AI code
-    
-    query = input_data.query
-    memory.write(query)
-    docs = docsearch.similarity_search(query)
-    answer = chain.run(input_documents=docs, question=query)
-    memory.write(answer)
-
-
-    # Handle the request and send the response
-    return {"query" : answer}
 
 # Step 2: Create a route that accepts POST requests with JSON data
-@app.post("/items/")
+@app.post("/tests/")
 async def create_item(query: InputData):
 
 
