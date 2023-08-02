@@ -4,6 +4,8 @@
 
 This web application enables users to browse through any file and interact with ChatGPT by asking questions based on the contents of that file. In this example, I have selected the file 'SalesGuide.pdf,' which serves as a guide for sales people. However, you have the flexibility to replace this PDF with any other file you prefer, such as a 'Database of Leads' or 'Sales Guidance,' to provide valuable assistance to sales professionals in their day-to-day work.
 
+**Final Result** : https://www.veed.io/view/29221610-1eaf-4de3-bc9b-3e463efa029f?panel=share
+
 ## Usage
 
 When you ran both frontend and backend, you shoud arrive on this page.
