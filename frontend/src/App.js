@@ -74,11 +74,16 @@ export default function App() {
   return (
     <div
     style={{
-      background: `url(${backgroundWebP}) no-repeat center center fixed`,
+      minHeight: '100vh', // Set a minimum height to cover at least the viewport
+      width: '100vw',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      background: `url(${backgroundWebP}) no-repeat center center`,
       backgroundSize: 'cover',
-      height: '100vh', // Set the height to 100% of the viewport height
-      width: '100vw', // Set the width to 100% of the viewport width
-      }}
+      overflow: 'auto', // Add overflow property to show scrollbar when content exceeds viewport height
+    }}
+
     >
     
     <CssVarsProvider>
