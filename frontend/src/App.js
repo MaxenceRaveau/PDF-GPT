@@ -12,7 +12,7 @@ import logopng from './logo.png';
 
 
 
-const apiendpoint = "http://localhost:8000/query2"
+const apiendpoint = process.env.REACT_APP_API_URL;
 
 export default function App() {
   const [query, setQuery] = React.useState('');
