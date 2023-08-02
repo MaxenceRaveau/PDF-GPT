@@ -9,3 +9,4 @@ langchain==0.0.248
 httpx==0.24.1
 tiktoken==0.4.0
 faiss-cpu==1.7.4
+pytest==7.4.0
