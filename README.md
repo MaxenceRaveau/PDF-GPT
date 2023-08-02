@@ -57,6 +57,7 @@ This project use Fast API, as long as OpenAI API and Langchain.
 8.  **Start the Application**: Navigate to the main folder of the repository and open a Command Prompt. Then run the following command to start the application:`uvicorn app:app --reload`
 
  ![Result Expected](https://image.noelshack.com/fichiers/2023/31/3/1690955883-screenshot-6.png)
+You can test the application, by requesting the url of the backend_ip in your browser. http://{server_ip}/
 
 ### Deploying to AWS S3 with Lambda
 
