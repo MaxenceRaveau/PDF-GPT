@@ -110,7 +110,7 @@ Please check the tests in the test.py file. The main.yaml file is located inside
 
 ##   Proposed Tasks for Improving the Project
 
-Despite the restricted time limit, we have identified several key improvements that can significantly enhance the project:
+Despite the restricted time limit, I have identified several key improvements that can significantly enhance the project:
 
 1.  **Integration of Vector Databases with Pinecone:** To improve efficiency, it is crucial to integrate vector databases with Pinecone. This integration will eliminate redundant file processing during server runs, leading to faster and more optimized operations.
     
